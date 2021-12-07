@@ -6,6 +6,7 @@ input.addEventListener("input", inputChange);
 function inputChange(event) {
   if (event.target.value === "") {
     span.textContent = Anonymous;
+  } else {
+    span.textContent = event.currentTarget.value;
   }
-  span.textContent = event.currentTarget.value;
 }
